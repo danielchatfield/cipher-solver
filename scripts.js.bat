@@ -1,0 +1,1 @@
+coffee -j assets/js/scripts.js -cw assets/coffee/scripts.js/

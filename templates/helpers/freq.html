@@ -1,0 +1,30 @@
+<div class="freq-graph">
+	<div class="freq-graph-cntr">
+		{% for key in keys %}
+			<div
+				class="freq-graph-cell tiptip"
+				data-key="{{ key }}"
+				data-value="{{ letter_count[key] }}"
+				data-freq="{{ letter_freq[key] }}"
+				data-sample-mean="{{ sample_mean[key] }}"
+				data-sample-max="{{ sample_max[key] }}"
+				data-sample-min="{{ sample_min[key] }}"
+				data-title="{{ letter_count[key] }} ({{ letter_freq[key] }}%)"
+			>
+				<div class="bar main-bar" style="height:{{ letter_freq[key] / denominator }}%"></div>
+				<div class="bar min-bar" style="height:{{ sample_min[key] / denominator }}%"></div>
+				<div class="bar max-bar" style="height:{{ sample_max[key] / denominator }}%"></div>
+				<div class="bar mean-bar" style="height:{{ sample_mean[key] / denominator }}%"></div>
+				<div class="caption">{{ key }}</div>
+			</div>
+		{% endfor %}
+	</div>
+	<div class="info-tray">
+		<span class="info-item tiptip" data-title="
+		{% for sample in selected_samples %}
+			{{ sample }}
+		{% endfor %}
+		">Selected Samples</span>
+		<span class="info-item tiptip" data-title="{{ selected_samples | length }}">Num Samples</span>
+	</div>
+</div>

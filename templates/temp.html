@@ -1,0 +1,41 @@
+<section class="section ciphertext">
+	<textarea id="ciphertext" class="cinder-saved-field textarea large-textarea code-input" placeholder="Enter ciphertext here" spellcheck="false"></textarea>
+	<div class="tray">
+		<button class="button send-message" data-message="cryptanalysis" title="Perform cryptanalysis on the ciphertext">Cryptanalysis</button>
+		<button class="button hidden" title="Load a saved sample">Load</button>
+		<button class="button hidden" title="Automatically grabs the latest cipher when it comes available.">Watch</button>
+	</div>
+</section>
+<section class="section analysis hidden live-field-visible" data-field="show-cryptanalysis">
+	{% for field in cryptanalysis.bool %}
+		<div class="info-box live-field live-field-bool" data-field="{{ field }}">
+			<div class="info-box-caption">{{ cryptanalysis.bool[field] }}</div>
+		</div>
+	{% endfor %}
+	<div class="divider"></div>
+	{% for field in cryptanalysis.number %}
+		<div class="info-box">
+			<div class="info-box-number live-field live-field-html" data-field="{{ field }}" data-default="-"></div>
+			<div class="info-box-caption">{{ cryptanalysis.number[field] }}</div>
+		</div>
+	{% endfor %}
+	<div class="divider"></div>
+	{% for field in cryptanalysis.text %}
+		<div class="info-box">
+			<div class="info-box-caption">{{ cryptanalysis.text[field] }}</div>
+			<div class="info-box-text live-field live-field-html" data-field="{{ field }}" data-default="-"></div>
+		</div>
+	{% endfor %}
+</section>
+<section class="section methods">
+	<div class="center">
+		<button class="button large-button center">Attempt auto decrypt</button>
+	</div>
+	<div class="divider"></div>
+	<div class="methods-cntr">
+
+	</div>
+</section>
+<section class="section plaintext">
+	<textarea id="plaintext" class="textarea large-textarea code-input" spellcheck="true"></textarea>
+</section>

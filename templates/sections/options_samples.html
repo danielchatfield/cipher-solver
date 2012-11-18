@@ -1,0 +1,12 @@
+{% extends 'section.html' %}
+
+{% block section_content %}
+	<div class="">
+		<h1>Select which samples to use</h1>
+		<input type="hidden" form="options" name="option_names" value="samples"></div>
+		{% for sample in funcs.get_samples() %}
+			<label>
+				<input form="options" name="samples" id="{{ section_id }}/{{ sample }}" class="cinder-saved-field" type="checkbox" value="{{ sample }}" />{{ sample }}</label><br />
+		{% endfor %}
+	</div>
+{% endblock section_content %}

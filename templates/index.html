@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>	 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>	 <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Daniel Chatfield's Cipher Solver</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="/assets/css/normalize.css">
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<script>var token = "{{ token }}"</script>
+		<script src="/assets/js/vendor/modernizr-2.6.1.min.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/gqc3pus.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+	</head>
+	{% block body %}
+		<body class="cinder-cntr">
+			<!--[if lt IE 7]>
+				<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+			<![endif]-->
+			
+			<div class="topbar clearfix">
+				<span class="signed-in">Signed in as {{ user.nickname() }} | <a href="{{ signout_url }}">Sign Out</a></span>
+			</div>
+
+			<div class="loading-overlay"></div>
+
+			{% block content %}
+				<form id="options" name="options"></form>
+				<div class="sidebar sidebar-left">
+					{% for section in core_sections %}
+						<button class="button sidebar-link" data-method="load_section" data-section="{{ section }}">{{ section }}</button>
+					{% endfor %}
+					<button class="button sidebar-link" data-method="load_custom_section">Load section</button>
+				</div>
+				<div class="column column-left">
+					<div class="tray column-buttons">
+						<button class="button" data-method="clear_column">Clear Column</button>
+					</div>
+					<div class="column-content"></div>
+				</div>
+				<div class="sidebar sidebar-right">
+					{% for section in main_sections %}
+
+					{% endfor %}
+					<button class="button sidebar-link" data-method="load_custom_section">Load section</button>
+				</div>
+				<div class="column column-right">
+					<div class="tray column-buttons">
+						<button class="button" data-method="clear_column">Clear Column</button>
+					</div>
+					<div class="column-content"></div>
+				</div>
+			{% endblock content %}
+			{% block logo %}
+				<div class="volcanicpixelslogo">
+					<a href="http://www.volcanicpixels.com/" rel="home">
+						<span class="black">Volcanic</span><span class="white">Pixels</span>
+					</a>
+				</div>
+			{% endblock logo %}
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+			<script src="/assets/js/plugins.js"></script>
+			<script src="/assets/js/scripts.js"></script>
+		</body>
+	{% endblock body %}
+</html>

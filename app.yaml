@@ -1,0 +1,25 @@
+application: cipher-solver
+version: 5
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+- url: /api/.*
+  script: app.app
+
+- url: / 
+  script: app.app
+
+- url: /assets/
+  static_dir: assets
+
+- url: /
+  static_dir: assets
+
+
+
+libraries:
+- name: jinja2
+  version: "latest"
