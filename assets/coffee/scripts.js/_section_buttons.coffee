@@ -1,20 +1,22 @@
 do ($ = jQuery, window, document) ->
 	methods = {}
-	namespace = 'cinderSelectSection'
-	selector = '.button[data-method="select_section"]'
+	namespace = 'cinderSelectInput'
+	selector = '.button[data-method="select_input"]'
 
 	methods.init = (e, cinder) ->
 		$(cinder).each () ->
 			$elems = $(this).find( selector )
 			$.merge $elems, $(this).filter( selector )
 			$elems.click(methods.click)
-
-			if $elems.parents('.section').find('.actual-input').length > 0
-				$elems.removeClass('hidden')
+			$elems.each ->
+				if $(@).parents('.input-cntr').length = 0
+					return
+				if $($(@).parents('.input-cntr')[0]).find('.actual-input').length > 0
+					$(@).removeClass('hidden')
 
 	methods.click = () ->
-		$('.section').attr('data-input', 'inactive')
-		$(@).parents('.section').attr('data-input', 'active')
+		$('.input-cntr').attr('data-input', 'inactive')
+		$($(@).parents('.input-cntr')[0]).attr('data-input', 'active')
 
 
 	cinder methods, namespace

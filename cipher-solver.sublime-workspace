@@ -4,12 +4,84 @@
 		"selected_items":
 		[
 			[
-				"full",
-				"full_sample_letter_freq"
+				"total",
+				"total_linear_offset"
+			],
+			[
+				"char",
+				"char_linear_offset"
+			],
+			[
+				"tota",
+				"total_linear_offset"
+			],
+			[
+				"tem",
+				"template_variables"
+			],
+			[
+				"key",
+				"key_length"
+			],
+			[
+				"vignere",
+				"vignere_table"
+			],
+			[
+				"linea",
+				"linear_offset"
+			],
+			[
+				"line",
+				"linear_offset"
+			],
+			[
+				"lin",
+				"linear_offset"
+			],
+			[
+				"linear",
+				"linear_offset_color"
 			],
 			[
 				"max",
 				"max_letter_freq"
+			],
+			[
+				"mean",
+				"mean_value"
+			],
+			[
+				"range",
+				"range_bound"
+			],
+			[
+				"filter",
+				"filtered_dir"
+			],
+			[
+				"sam",
+				"sample_content"
+			],
+			[
+				"templa",
+				"template_variables"
+			],
+			[
+				"ret",
+				"return_object"
+			],
+			[
+				"return",
+				"return_object_tmp"
+			],
+			[
+				"re",
+				"return_object_tmp"
+			],
+			[
+				"full",
+				"full_sample_letter_freq"
 			],
 			[
 				"full_sam",
@@ -20,16 +92,8 @@
 				"max_letter_freq"
 			],
 			[
-				"char",
-				"char_freq"
-			],
-			[
 				"sample",
 				"sample_letter_freq"
-			],
-			[
-				"sam",
-				"sample_letter_count"
 			],
 			[
 				"letter",
@@ -74,10 +138,6 @@
 			[
 				"te",
 				"template_variables"
-			],
-			[
-				"return",
-				"return_object"
 			],
 			[
 				"hasE",
@@ -348,10 +408,6 @@
 				"copyLavaFiles"
 			],
 			[
-				"re",
-				"require"
-			],
-			[
 				"p",
 				"process"
 			]
@@ -360,10 +416,66 @@
 	"buffers":
 	[
 		{
+			"file": "assets/coffee/scripts.js/_cryptanalysis.coffee",
+			"settings":
+			{
+				"buffer_size": 1695,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/coffee/scripts.js/_load_api.coffee",
+			"settings":
+			{
+				"buffer_size": 754,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/sections/input_splitter.html",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/split.py",
+			"settings":
+			{
+				"buffer_size": 875,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/sections/split.html",
+			"settings":
+			{
+				"buffer_size": 280,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app.py",
 			"settings":
 			{
-				"buffer_size": 1438,
+				"buffer_size": 1594,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/beaufort.py",
+			"settings":
+			{
+				"buffer_size": 1143,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/sections/section.html",
+			"settings":
+			{
+				"buffer_size": 906,
 				"line_ending": "Windows"
 			}
 		},
@@ -371,63 +483,15 @@
 			"file": "models/helpers.py",
 			"settings":
 			{
-				"buffer_size": 2315,
+				"buffer_size": 2986,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "controllers/cryptanalysis.py",
+			"file": "models/funcs.py",
 			"settings":
 			{
-				"buffer_size": 789,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "models/options.py",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/coffee/scripts.js/_cryptanalysis.coffee",
-			"settings":
-			{
-				"buffer_size": 1692,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/css/styles.less",
-			"settings":
-			{
-				"buffer_size": 8995,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "models/models.py",
-			"settings":
-			{
-				"buffer_size": 634,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/index.html",
-			"settings":
-			{
-				"buffer_size": 3201,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "assets/coffee/scripts.js/_section_buttons.coffee",
-			"settings":
-			{
-				"buffer_size": 2896,
+				"buffer_size": 3962,
 				"line_ending": "Windows"
 			}
 		},
@@ -459,15 +523,7 @@
 			"file": "models/ciphertext.py",
 			"settings":
 			{
-				"buffer_size": 2499,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "models/funcs.py",
-			"settings":
-			{
-				"buffer_size": 1641,
+				"buffer_size": 2833,
 				"line_ending": "Windows"
 			}
 		},
@@ -475,7 +531,7 @@
 			"file": "templates/helpers/freq.html",
 			"settings":
 			{
-				"buffer_size": 1144,
+				"buffer_size": 1648,
 				"line_ending": "Windows"
 			}
 		}
@@ -520,34 +576,39 @@
 	},
 	"file_history":
 	[
+		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_section_buttons.coffee",
+		"/G/Projects/cipher-solver/assets/css/styles.less",
+		"/G/Projects/cipher-solver/templates/sections/cryptanalysis.html",
+		"/G/Projects/cipher-solver/app.py",
+		"/G/Projects/cipher-solver/controllers/cryptanalysis.py",
+		"/G/Projects/cipher-solver/models/helpers.py",
+		"/G/Projects/cipher-solver/controllers/beaufort.py",
+		"/G/Projects/cipher-solver/controllers/vignere.py",
 		"/G/Projects/cipher-solver/models/models.py",
+		"/G/Projects/cipher-solver/assets/js/scripts.js",
+		"/G/Projects/cipher-solver/templates/sections/section.html",
+		"/G/Projects/EPQ/adfgvx_solver/lib/funcs.py",
+		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_cryptanalysis.coffee",
+		"/G/Projects/cipher-solver/templates/index.html",
+		"/G/Projects/cipher-solver/models/options.py",
 		"/G/Projects/cipher-solver/models/__init__.py",
 		"/G/Projects/cipher-solver/models/funcs.py",
 		"/G/Projects/cipher-solver/controllers/load_sample.py",
 		"/G/Projects/cipher-solver/assets/js/plugins.js",
 		"/G/Projects/cipher-solver/templates/sections/input.html",
 		"/G/Projects/cipher-solver/controllers/get_section.py",
-		"/G/Projects/cipher-solver/templates/sections/cryptanalysis.html",
-		"/G/Projects/cipher-solver/controllers/cryptanalysis.py",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_sidebar_buttons.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_reload_app.coffee",
-		"/G/Projects/cipher-solver/templates/index.html",
-		"/G/Projects/cipher-solver/assets/css/styles.less",
-		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_cryptanalysis.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_saved_fields.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_tiptip.coffee",
-		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_section_buttons.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_load_section_buttons.coffee",
-		"/G/Projects/cipher-solver/assets/js/scripts.js",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_column_buttons.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_load_sample.coffee",
 		"/G/Projects/cipher-solver/templates/helpers/freq.html",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/main.coffee",
 		"/G/Projects/cipher-solver/templates/section.html",
-		"/G/Projects/cipher-solver/models/helpers.py",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_ciphertext.coffee",
 		"/G/Projects/cipher-solver/models/ciphertext.py",
-		"/G/Projects/EPQ/adfgvx_solver/lib/funcs.py",
 		"/C/Users/Daniel/AppData/Local/Temp/Temp1_tipTipv13.zip/tipTip.css",
 		"/C/Users/Daniel/AppData/Local/Temp/Temp1_tipTipv13.zip/jquery.tipTip.minified.js",
 		"/G/Projects/cipher-solver/ciphertext.py",
@@ -560,7 +621,6 @@
 		"/G/Projects/cipher-solver/templates/tray.html",
 		"/G/Projects/cipher-solver/app.yaml",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_load_ui.coffee",
-		"/G/Projects/cipher-solver/app.py",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_channel.coffee",
 		"/G/Projects/cipher-solver/assets/coffee/scripts.js/_html_section.coffee",
 		"/G/Projects/cipher-solver/templates/sidebar.html",
@@ -643,11 +703,7 @@
 		"/D/Projects/Private-Blog/build/classes/Widget/Controller.php",
 		"/D/Projects/Private-Blog/build/classes/Extension/Controller.php",
 		"/D/Projects/Blank-Plugin/src/plugin.php",
-		"/D/Projects/Private-Blog/libs/lava/classes/Setting.php",
-		"/D/Projects/Private-Blog/build/classes/Base.php",
-		"/D/Projects/Privacy-Plugin/plugin.php",
-		"/C/Users/Daniel/Documents/My Web Sites/WordPress Dev/wp-content/plugins/private-blog/assets/css/lava.css",
-		"/C/Users/Daniel/Documents/My Web Sites/WordPress Dev/wp-content/plugins/private-blog/plugin.php"
+		"/D/Projects/Private-Blog/libs/lava/classes/Setting.php"
 	],
 	"find":
 	{
@@ -655,7 +711,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"-*build*",
@@ -670,6 +726,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-input",
+			"caesa",
+			"caea",
+			"colour",
 			"cinder",
 			"left",
 			"loadSec",
@@ -726,28 +786,28 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.py",
+					"file": "assets/coffee/scripts.js/_cryptanalysis.coffee",
 					"settings":
 					{
-						"buffer_size": 1438,
+						"buffer_size": 1695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								766,
-								766
+								1668,
+								1668
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -758,239 +818,45 @@
 				},
 				{
 					"buffer": 1,
-					"file": "models/helpers.py",
+					"file": "assets/coffee/scripts.js/_load_api.coffee",
 					"settings":
 					{
-						"buffer_size": 2315,
+						"buffer_size": 754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2168,
-								2168
+								79,
+								79
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "controllers/cryptanalysis.py",
+					"file": "templates/sections/input_splitter.html",
 					"settings":
 					{
-						"buffer_size": 789,
+						"buffer_size": 495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								773,
-								773
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "models/options.py",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "assets/coffee/scripts.js/_cryptanalysis.coffee",
-					"settings":
-					{
-						"buffer_size": 1692,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								456
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/css/styles.less",
-					"settings":
-					{
-						"buffer_size": 8995,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4277,
-								4277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3696.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "models/models.py",
-					"settings":
-					{
-						"buffer_size": 634,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								252,
-								252
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 7,
-			"sheets":
-			[
-				{
-					"buffer": 7,
-					"file": "templates/index.html",
-					"settings":
-					{
-						"buffer_size": 3201,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3162,
-								3162
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 504.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "assets/coffee/scripts.js/_section_buttons.coffee",
-					"settings":
-					{
-						"buffer_size": 2896,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2896,
-								2896
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 714.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "templates/sections/options_samples.html",
-					"settings":
-					{
-						"buffer_size": 469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								389,
-								389
+								188,
+								188
 							]
 						],
 						"settings":
@@ -1004,7 +870,227 @@
 					"type": "text"
 				},
 				{
+					"buffer": 3,
+					"file": "controllers/split.py",
+					"settings":
+					{
+						"buffer_size": 875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								512,
+								512
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/sections/split.html",
+					"settings":
+					{
+						"buffer_size": 280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app.py",
+					"settings":
+					{
+						"buffer_size": 1594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "controllers/beaufort.py",
+					"settings":
+					{
+						"buffer_size": 1143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								900,
+								915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/sections/section.html",
+					"settings":
+					{
+						"buffer_size": 906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								431,
+								350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "models/helpers.py",
+					"settings":
+					{
+						"buffer_size": 2986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2185,
+								2185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "models/funcs.py",
+					"settings":
+					{
+						"buffer_size": 3962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
 					"buffer": 10,
+					"file": "templates/sections/options_samples.html",
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja Templates).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "assets/coffee/scripts.js/_saved_fields.coffee",
 					"settings":
 					{
@@ -1031,7 +1117,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "assets/coffee/scripts.js/_reload_app.coffee",
 					"settings":
 					{
@@ -1058,19 +1144,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "models/ciphertext.py",
 					"settings":
 					{
-						"buffer_size": 2499,
+						"buffer_size": 2833,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1600,
-								1437
+								2340,
+								2340
 							]
 						],
 						"settings":
@@ -1079,34 +1165,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "models/funcs.py",
-					"settings":
-					{
-						"buffer_size": 1641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1277,
-								1277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 588.0,
+						"translation.y": 1050.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1116,15 +1175,15 @@
 					"file": "templates/helpers/freq.html",
 					"settings":
 					{
-						"buffer_size": 1144,
+						"buffer_size": 1648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								855,
-								855
+								1602,
+								1602
 							]
 						],
 						"settings":
@@ -1169,7 +1228,7 @@
 		"cols":
 		[
 			0.0,
-			0.440326633166,
+			0.534547738693,
 			1.0
 		],
 		"rows":
@@ -1193,6 +1252,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"cipherte",
+				"models/ciphertext.py"
+			],
 			[
 				"styles",
 				"assets/css/styles.less"

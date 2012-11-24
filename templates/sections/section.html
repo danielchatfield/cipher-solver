@@ -1,8 +1,8 @@
 {% block section %}
-	<section id="section-{{ section_id }}" class="tiptip section section-{{ section_name }} section-{{ section_id }} {% block class %}{% endblock class %}" data-section-id="{{ section_id }}" data-section-name="{{ section_name }}" data-title="{{ section_id }}">
+	<section id="section-{{ section_id }}" class="tiptip input-cntr section section-{{ section_name }} section-{{ section_id }} {% block class %}{% endblock class %}" data-section-id="{{ section_id }}" data-section-name="{{ section_name }}" data-title="{{ section_id }}">
 		{% block tray %}
 			<div class="tray section-buttons">
-				<button class="button hidden" data-method="select_section">Select as input</button>
+				<button class="button hidden" data-method="select_input">Select as input</button>
 				<button class="button" data-method="close_section">Close</button>
 				<button class="button" data-method="minimize_section">Minimize</button>
 				<button class="button hidden" data-method="do_section">Reload</button>

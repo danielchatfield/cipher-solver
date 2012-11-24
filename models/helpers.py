@@ -1,6 +1,7 @@
 import os
 import jinja2
 import funcs
+import logging
 
 jinja_environment = jinja2.Environment(
 	loader=jinja2.FileSystemLoader(
@@ -11,14 +12,17 @@ jinja_environment = jinja2.Environment(
 		)
 	)
 
-def letter_count( letter_count ):
+def ordered_letter_count( letter_count ):
+	return letter_count( letter_count, True )
+
+def letter_count( letter_count, ordered = False ):
 	total = 0
 	letter_freq = {}
 	letter_height = {}
 	min_letter_freq = {}
 	max_letter_freq = {}
 	maximum = 0
-	selected_samples = funcs.get_selected_samples()
+	selected_samples = funcs.get_selected_samples( 'en' )
 	sample_total = 0
 	full_sample = ''
 
@@ -30,8 +34,9 @@ def letter_count( letter_count ):
 		sample_maximum = 0
 		sample_total = 0
 		sample_content = funcs.get_sample(sample)
+
 		full_sample = full_sample + sample_content
-		sample_letter_count = funcs.letter_count(sample_content)
+		sample_letter_count = funcs.letter_count(sample_content, ordered)
 		sample_letter_freq = {}
 		for char in sample_letter_count:
 			sample_total = sample_total + sample_letter_count[char]
@@ -46,8 +51,11 @@ def letter_count( letter_count ):
 				maximum = char_freq
 
 	full_sample_letter_freq = {}
-	full_sample_count = funcs.letter_count(full_sample)
+	full_sample_count = funcs.letter_count(full_sample, ordered)
 	full_sample_total = 0
+	linear_offset_color = {}
+	linear_offset = {}
+	total_linear_offset = 0
 	for char in full_sample_count:
 		full_sample_total = full_sample_total + full_sample_count[char]
 
@@ -59,6 +67,10 @@ def letter_count( letter_count ):
 
 	for char in letter_count:
 		char_freq = funcs.percentage(letter_count[char], total)
+		char_linear_offset = funcs.linear_offset( char_freq, full_sample_letter_freq[char], min_letter_freq[char], max_letter_freq[char])
+		linear_offset[char] = char_linear_offset
+		total_linear_offset = total_linear_offset + abs(char_linear_offset)
+		linear_offset_color[char] = funcs.linear_offset_color( char_linear_offset )
 		letter_freq[char] = char_freq
 		if char_freq > maximum:
 			maximum = char_freq
@@ -74,7 +86,10 @@ def letter_count( letter_count ):
 		'sample_min': min_letter_freq,
 		'sample_mean': full_sample_letter_freq,
 		'selected_samples': selected_samples,
-		'keys': funcs.get_upper_alphabet_list()
+		'linear_offset_color': linear_offset_color,
+		'total_linear_offset': int(round(total_linear_offset)),
+		'linear_offset': linear_offset,
+		'keys': sorted(letter_count.keys())
 	}
 	template = jinja_environment.get_template('freq.html')
 	return template.render( template_variables )

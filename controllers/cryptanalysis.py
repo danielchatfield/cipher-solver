@@ -17,9 +17,12 @@ class Cryptanalysis(ApiRequest):
 
 	def do_object_filters(self, objects):
 		objects['html_values'].append('letter_count_graph')
+		objects['html_values'].append('ordered_letter_count_graph')
 		return objects
 
 	def letter_count_graph(self, output):
 		letter_count = output['letter_count']
+		ordered_letter_count = output['ordered_letter_count']
 		output['letter_count_graph'] = helpers.letter_count(letter_count)
+		output['ordered_letter_count_graph'] = helpers.letter_count(ordered_letter_count, True)
 		return output

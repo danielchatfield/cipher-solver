@@ -1,0 +1,8 @@
+{% for i in output %}
+	<div class="input-cntr">
+		<div class="center">
+			<button class="button hidden" data-method="select_input">Select as input</button>
+		</div>
+		<textarea class="actual-input textarea large-textarea code-input">{{ output[i] }}</textarea>
+	</div>
+{% endfor %}

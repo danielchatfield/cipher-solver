@@ -9,13 +9,21 @@
 				data-sample-mean="{{ sample_mean[key] }}"
 				data-sample-max="{{ sample_max[key] }}"
 				data-sample-min="{{ sample_min[key] }}"
-				data-title="{{ letter_count[key] }} ({{ letter_freq[key] }}%)"
+				data-linear-offset="{{ linear_offset[key] }}"
+				data-title=
+"letter_count: {{ letter_count[key] }}&lt;br/&gt;
+letter_freq: {{ letter_freq[key] }}&lt;br/&gt;
+sample_mean: {{ sample_mean[key] }}&lt;br/&gt;
+sample_max: {{ sample_max[key] }}&lt;br/&gt;
+sample_min: {{ sample_min[key] }}&lt;br/&gt;
+linear_offset: {{ linear_offset[key] }}&lt;br/&gt;
+linear_offset_color: {{ linear_offset_color[key] }}&lt;br/&gt;"
 			>
 				<div class="bar main-bar" style="height:{{ letter_freq[key] / denominator }}%"></div>
 				<div class="bar min-bar" style="height:{{ sample_min[key] / denominator }}%"></div>
 				<div class="bar max-bar" style="height:{{ sample_max[key] / denominator }}%"></div>
 				<div class="bar mean-bar" style="height:{{ sample_mean[key] / denominator }}%"></div>
-				<div class="caption">{{ key }}</div>
+				<div class="caption tiptip" style="background:{{ linear_offset_color[key] }}">{{ key }}</div>
 			</div>
 		{% endfor %}
 	</div>
@@ -26,5 +34,6 @@
 		{% endfor %}
 		">Selected Samples</span>
 		<span class="info-item tiptip" data-title="{{ selected_samples | length }}">Num Samples</span>
+		<span class="info-item tiptip" data-title="{{ total_linear_offset }}">Total linear offset</span>
 	</div>
 </div>

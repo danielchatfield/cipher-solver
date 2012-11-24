@@ -14,7 +14,7 @@ do ($ = jQuery, window, document) ->
 		method = $(@).parents('.section').attr('data-section-name')
 		options = $('#options').serialize()
 		data = {
-			'input': $('.section[data-input="active"] .actual-input').val()			
+			'input': $('.input-cntr[data-input="active"] .actual-input').val()			
 		}
 		section = $(@).parents('.section').find('.section-content')
 		$.post( "api/#{method}/?#{options}", data, (data) ->

@@ -1,4 +1,6 @@
 from md5 import md5
+import funcs
+
 
 class Ciphertext():
 	ciphertext = '';
@@ -60,6 +62,20 @@ class Ciphertext():
 			count = count + self.ciphertext.count(char)
 		return count
 
+	def is_cached(self, id):
+		return False
+
+	def get_cached(self, id):
+		return ''
+
+	def ordered_letter_count(self):
+		id = 'ordered_letter_count'
+		if self.is_cached(id):
+			return self.get_cached(id)
+		else:
+			return funcs.ordered_letter_count(self.ciphertext)
+
+
 	def letter_count(self):
 		return_object = {}
 		for char in self.upper_alphabet:
@@ -80,7 +96,8 @@ class Ciphertext():
 			'has_lower': self.has_lower(),
 			'is_upper': self.is_upper(),
 			'is_lower': self.is_lower(),
-			'letter_count': self.letter_count()
+			'letter_count': self.letter_count(),
+			'ordered_letter_count': self.ordered_letter_count()
 		}
 
 		return return_object

@@ -1,0 +1,13 @@
+{% extends 'section.html' %}
+
+{% block section_content %}
+	<div class="live-zone-cntr">
+		<div class="tray">
+			<input type="hidden" form="options" name="option_names" value="split_count">
+			<label>Split count: <input type="text" form="options" name="split_count" class="cinder-saved-field" id="split_count"/></label>
+			<button class="button" data-method="load_api" data-api-method="split">Split input</button>
+		</div>
+		<div class="live-zone">
+		</div>
+	</div>
+{% endblock section_content %}

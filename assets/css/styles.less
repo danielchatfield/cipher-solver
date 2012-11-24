@@ -20,6 +20,7 @@ h1 {
 	position: relative;
 	padding: 10px;
 	border: 1px solid @raised-area;
+	background: rgba(255,255,255,0.8);
 
 	&::-webkit-input-placeholder {
 		text-align: center;
@@ -140,17 +141,14 @@ h1 {
 		}
 	}
 
-	&[data-input="active"] {
-		border-left: 10px solid green;
-		border-right: 10px solid green;
-
-		.section-content {
-			padding: 30px 10px;
-		}
-	}
-
 	.section-content {
 		padding: 30px 20px;
+	}
+}
+
+.input-cntr {
+	&[data-input="active"] {
+		background: green;
 	}
 }
 
@@ -304,6 +302,9 @@ h1 {
 			border-left: 1px solid white;
 			border-right: 1px solid white;
 			background: rgba(0,0,0,0.05);
+			padding-top: 20px;
+			box-sizing: content-box;
+
 			&:hover {
 				background: rgba(0,0,0,0.1);
 			}
@@ -319,6 +320,14 @@ h1 {
 				}
 			}
 
+			.info {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				height: 10px;
+				background: black;
+			}
 			
 
 			.bar {
@@ -327,8 +336,10 @@ h1 {
 				left: 0px;
 				right: 0px;
 				border-top: 1px solid black;
+				box-sizing: content-box;
 
 				&.main-bar {
+					z-index: 10;
 					border-color: blue;
 					background: rgba(0,0,0,0.1);
 				}

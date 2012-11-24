@@ -207,7 +207,7 @@ Responsible for binding methods to events
       method = $(this).parents('.section').attr('data-section-name');
       options = $('#options').serialize();
       data = {
-        'input': $('.section[data-input="active"] .actual-input').val()
+        'input': $('.input-cntr[data-input="active"] .actual-input').val()
       };
       section = $(this).parents('.section').find('.section-content');
       return $.post("api/" + method + "/?" + options, data, function(data) {
@@ -361,22 +361,27 @@ Responsible for binding methods to events
   (function($, window, document) {
     var methods, namespace, selector;
     methods = {};
-    namespace = 'cinderSelectSection';
-    selector = '.button[data-method="select_section"]';
+    namespace = 'cinderSelectInput';
+    selector = '.button[data-method="select_input"]';
     methods.init = function(e, cinder) {
       return $(cinder).each(function() {
         var $elems;
         $elems = $(this).find(selector);
         $.merge($elems, $(this).filter(selector));
         $elems.click(methods.click);
-        if ($elems.parents('.section').find('.actual-input').length > 0) {
-          return $elems.removeClass('hidden');
-        }
+        return $elems.each(function() {
+          if ($(this).parents('.input-cntr').length = 0) {
+            return;
+          }
+          if ($($(this).parents('.input-cntr')[0]).find('.actual-input').length > 0) {
+            return $(this).removeClass('hidden');
+          }
+        });
       });
     };
     methods.click = function() {
-      $('.section').attr('data-input', 'inactive');
-      return $(this).parents('.section').attr('data-input', 'active');
+      $('.input-cntr').attr('data-input', 'inactive');
+      return $($(this).parents('.input-cntr')[0]).attr('data-input', 'active');
     };
     return cinder(methods, namespace);
   })(jQuery, window, document);
@@ -550,6 +555,37 @@ Responsible for binding methods to events
           'defaultPosition': 'top'
         };
         return $elems.tipTip(options);
+      });
+    };
+    return cinder(methods, namespace);
+  })(jQuery, window, document);
+
+  (function($, window, document) {
+    var methods, namespace, selector;
+    methods = {};
+    namespace = 'cinderLoadApi';
+    selector = '.button[data-method="load_api"]';
+    methods.init = function(e, cinder) {
+      return $(cinder).each(function() {
+        var $elems;
+        $elems = $(this).find(selector);
+        $.merge($elems, $(this).filter(selector));
+        return $elems.click(methods.click);
+      });
+    };
+    methods.click = function() {
+      var data, method, options, target;
+      method = $(this).attr('data-api-method');
+      options = $('#options').serialize();
+      data = {
+        'input': $('.input-cntr[data-input="active"] .actual-input').val()
+      };
+      target = $(this).parents('.live-zone-cntr').find('.live-zone');
+      return $.post("api/" + method + "/?" + options, data, function(data) {
+        $(target).html('');
+        $(target).html(data.output);
+        $(target).effect("highlight", {}, 1500);
+        return $(target).cinder();
       });
     };
     return cinder(methods, namespace);

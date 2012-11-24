@@ -6,6 +6,8 @@ from models.models import Request, ApiRequest
 from controllers.get_section import GetSection
 from controllers.cryptanalysis import Cryptanalysis
 from controllers.load_sample import LoadSample
+from controllers.split import Split
+from controllers.beaufort import DecryptBeaufort
 from google.appengine.api import channel
 from google.appengine.api import users
 
@@ -54,6 +56,8 @@ app = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/api/get_section/', GetSection),
 	('/api/cryptanalysis/', Cryptanalysis),
+	('/api/split/', Split),
+	('/api/decrypt_beaufort/', DecryptBeaufort),
 	('/api/load_sample/', LoadSample)
 	],
 	debug=True )
